@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_prosJ">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+                   <img src="img/bg-cols-t12.png"/>
+               	</div>
+               	<div class="policy">
+               		<p class="wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="0.5s">只要您具备以下条件，我们就有机会成为一家人。</p>
+               		<div class="policy_img">
+               			<div class="policy_img_item">
+               				<img src="img/img-guide-a7.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+               				<p class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">拥有60万以上投资资金+100万流动资金</p>
+               			</div>
+               			<div class="policy_img_item">
+               				<img src="img/img-guide-a8.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+               				<p class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">拥有面积60平米以上</p>
+							<p class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">门头宽6米以上核心店铺资源</p>
+               			</div>
+               			<div class="policy_img_item">
+               				<img src="img/img-guide-a9.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+               				<p class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">有激情、有商誉、有梦想</p>
+               			</div>
+               		</div>
+               		<div>
+               			<img src="img/img-guide-b2.png" class="wow rotateInDownLeft"/>
+               		</div>
+               		
+               		<div class="policy_flow">
+		            	<div class="policy_con wow fadeInLeft" data-wow-duration="1500ms">
+		            		<img src="img/img-guide-a10.png"/>
+		            		
+		            	</div>
+		            	<div class="policy_con wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0.5s">
+		            		<img src="img/img-guide-a11.png"/>
+		            	</div>
+		            	<div class="policy_con wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1s">
+		            		<img src="img/img-guide-a12.png"/>
+		            	</div>
+		            	<div class="policy_con wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.5s">
+		            		<img src="img/img-guide-a13.png"/>
+		            	</div>
+		            	<div class="policy_con wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="2s">
+		            		<img src="img/img-guide-a14.png"/>
+		            	</div>
+		            	<div class="policy_con1 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="2.5s">
+		            		<img src="img/img-guide-a15.png" />
+		            	</div>
+	            	</div>
+               		<div>
+               			<img src="img/img-guide-b3.png" class="wow rotateInDownLeft"/>
+               		</div>
+               		
+               		<div class="policy_navs wow fadeIn" data-wow-duration="1500ms">
+               			<div class="policy_cons policy_nav1">
+		            		<div class="policy_nav">
+		            			<div class="triangle">
+		            				
+		            			</div>
+		            			首笔投入
+		            		</div>
+		            		<p>加盟费：45000；</p>
+		            		<p>履约保证金：20万/店；</p>
+		            		<p>装修费：15-20万/店；</p>
+	            		</div>
+	            		<div class="policy_cons policy_nav2 wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">
+		            		<div class="policy_nav">
+		            			<div class="triangle">
+		            				
+		            			</div>
+		            			加盟商收入
+		            		</div>
+		            		<p>营业销售为加盟所有，加盟商用于支付门店产生的日常费用（商品进货成本、租金、管理费、员工工资等费用）。</p>
+	            		</div>
+	            	</div>
+               	</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

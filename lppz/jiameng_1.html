@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_prosJ">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+                   <img src="img/bg-cols-t11.png"/>
+               	</div>
+               <div class="join_request">
+               		<div class="join_intr">
+               			<div class="join_list wow zoomIn" data-wow-duration="1500ms">简介</div>
+               			<div class="join_con wow fadeIn" data-wow-duration="2000ms" data-wow-delay="0.5s">
+               				<p>良品铺子股份有限公司是一家致力于休闲食品零售服务的专业品牌连锁运营公司。</p>
+               				<p>公司2011年开放加盟，加盟开放市场遍布全国各地。</p>
+               				<p>良品铺子已经成为了促进社会和谐发展的企业，在行业内享有良好的美誉，现已成为中国休闲食品零售行业的领导品牌。</p>
+               			</div>
+               		</div>
+               		<div class="join_intr">
+               			<div class="join_list wow zoomIn" data-wow-duration="1500ms">理念</div>
+               			<div class="join_con wow fadeIn" data-wow-duration="2000ms" data-wow-delay="0.5s">
+               				<p>公司加盟理念：同心同德，合作双赢</p>
+               				<p>良品加盟商文化：玩出生产力，学出生产力，爱出生产力</p>
+               			</div>
+               		</div>
+               </div>
+               <div class="wow rotateInDownLeft">
+               		<img src="img/img-guide-b1.png"/>
+               </div>
+               <div class="products_flow">
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a1.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+	            		<div class="wow fadeIn" data-wow-duration="1500ms">
+	            			<p>品牌开店数超2000家；</p>
+	            		</div>
+	            	</div>
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a2.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms">	
+		            		<p>六层品质把关，优质产品让顾客品味健康美味零食；</p>
+	            		</div>
+	            	</div>
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a3.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms">
+		            		<p>在线APP购物+社区一站式服务，明星代言，当红综艺节目品牌赞助，与粉丝甜蜜互动，从顾客角度出发，注重顾客体验；</p>
+		            	</div>
+	            	</div>
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a4.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms">	
+		            		<p>行业领先门店管理，指导门店业绩提升；</p>
+		            	</div>
+	            	</div>
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a5.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms">	
+		            		<p>全球先进SAP智能系统全面支持门店运营；</p>
+		            	</div>
+	            	</div>
+	            	<div class="products_flow_con products_flow_con1">
+	            		<img src="img/img-guide-a6.png" class="wow zoomIn" data-wow-duration="1500ms"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms">	
+		            		<p>系统对货识别，物流基地快速将叫货商品送达门店；</p>
+		            	</div>
+	            	</div>
+	            </div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="ranking_box">
+			<div class="ranking_nav">
+				<div class="ranking_nav_img"><img src="img/logo1.png"/></div>
+				<ul class="ranking_nav_list">
+					<li>
+						<a href="y_app.html">首页</a>
+					</li>
+					<li>
+						<a href="y_app_download.html">下载</a>
+					</li>
+					<li>
+						<a href="y_app_login.html">快速发帖</a>
+					</li>
+					<li>
+						<a href="y_app_login.html">我的帖子</a>
+					</li>
+					<li>
+						<a class="cb" href="y_app_ranking.html">排行榜</a>
+					</li>
+				</ul>
+				<div class="ranking_nav_gif">
+					<img src="img/loading_dot.gif"/>
+				</div>
+			</div>
+		</div>
+		<div class="ranking_con">
+			<img src="img/rank_banner.jpg"/>
+			<div class="ranking_con_title"></div>
+			<div class="ranking_con_list">
+				<table>
+		        	<tr>
+		        		<th>排名</th>
+		        		<th>昵称</th>
+		        		<th>评论/回复数</th>
+		        		<th>本月发帖总数</th>
+		        	</tr>
+		        	<tr>
+		        		<td><i class="No_1"></i></td>
+		        		<td>小良同学</td>
+		        		<td>8542</td>
+		        		<td>26</td>
+		        	</tr>
+		        	<tr>
+		        		<td><i class="No_2"></i></td>
+		        		<td>妙妙酱</td>
+		        		<td>850</td>
+		        		<td>14</td>
+		        	</tr>
+		        	<tr>
+		        		<td><i class="No_3"></i></td>
+		        		<td>史睿营养师</td>
+		        		<td>656</td>
+		        		<td>1</td>
+		        	</tr>
+		        </table>
+		        <span>查看更多</span>
+			</div>
+		</div>
+		<div class="app_footer">
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<img src="img/foot_logo.png"/>
+					<p style="margin-top: 30px;">Copyright@2006-2016 湖北良品铺子电子商务有限公司 All rights Reserved</p>
+					<p>鄂ICP备15022981号</p>
+				</div>
+				<div class="footer_nav_right">
+					<p>良品铺子App</p>
+					<img src="img/lp_qrcode_app.png" />
+				</div>
+			</div>
+		</div>
+		<script>
+			(function(){
+				$.ajax({
+					url:"demo3.json",
+					success : function(res){
+						res.forEach(function(v,i){
+								var sss = '';
+								var tr = `<tr class="No_s"></tr>`;
+								$('.ranking_con_list table').append(tr);
+								v.con.forEach(function(m,n){
+									sss += `<td>${m}</td>`
+								})
+								$('.ranking_con_list table .No_s').eq(i).append(sss)
+						})
+					}
+				});
+				$('.ranking_con_list span').click(function(){
+					$(this).hide()
+					$.ajax({
+						url:"demo4.json",
+						success : function(res){
+							res.forEach(function(v,i){
+								var sss = '';
+								var tr = `<tr class="No_ss"></tr>`;
+								$('.ranking_con_list table').append(tr);
+								v.con.forEach(function(m,n){
+									sss += `<td>${m}</td>`
+								})
+								$('.ranking_con_list table .No_ss').eq(i).append(sss)
+							})
+						}
+					})
+				})
+			})()
+		</script>
+	</body>
+</html>

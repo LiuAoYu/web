@@ -1,0 +1,409 @@
+[{
+	"src" : "img/bg-prod-ban.jpg",
+	"src_nav" : "img/bg-prod-tit.jpg",
+	"nav" : [{
+		"srcs" : "img/01.大麦若叶曲奇.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.蔓越莓曲奇饼干.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.麻薯.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.乳香烙蛋糕.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.手撕面包.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.原味肉松饼.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.香酥大麻花.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.苏打饼干.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (1).jpg",
+	"src_nav" : "img/bg-prod-tit (1).jpg",
+	"nav" : [{
+		"srcs" : "img/1-虾夷扇贝2.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/2-对对虾.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/3-迷你深海鱼肠2.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/4-碳烤鱿鱼丝.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/5-麻辣小龙虾.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/6-香辣小黄鱼.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/7-小鱼仔.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/8-鱼丸.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (2).jpg",
+	"src_nav" : "img/bg-prod-tit (2).jpg",
+	"nav" : [{
+		"srcs" : "img/01.麻辣灯影牛肉.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.香辣味牛肉粒.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.甜辣味鸭脖.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.甜辣味鸭舌.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.盐焗鸡翅.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.卤香味排骨.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.香辣鸭翅.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.猪肉粒.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (3).jpg",
+	"src_nav" : "img/bg-prod-tit (3).jpg",
+	"nav" : [{
+		"srcs" : "img/01.速食豆腐花.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.坚果燕麦藕粉.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.水果燕麦藕粉.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.水果燕麦藕粉.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.苦荞.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.蓝莓花果茶.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.鲜花豆浆粉.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.核桃黑芝麻谷物粉.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (4).jpg",
+	"src_nav" : "img/bg-prod-tit (4).jpg",
+	"nav" : [{
+		"srcs" : "img/01.蜂蜜味樱桃.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.法兰蒂草莓干.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.蔓越莓干.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.无核白葡萄干.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.白桃果干.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.菠萝片.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.杏干.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.紫薯仔.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (5).jpg",
+	"src_nav" : "img/bg-prod-tit (5).jpg",
+	"nav" : [{
+		"srcs" : "img/01.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.阿胶蜜枣.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.冰糖山楂.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.贵妃杨梅王.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.桂花加应子.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.果丹皮.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.空心山楂.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.山楂片.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (6).jpg",
+	"src_nav" : "img/bg-prod-tit (6).jpg",
+	"nav" : [{
+		"srcs" : "img/01.海带结.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.金针菇.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.泡椒味脆笋.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.甜辣薄豆干.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.香辣味海带丝.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.爽脆下饭菜（萝卜干）.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.香辣卤藕.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.烧烤味鱼豆腐.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (7).jpg",
+	"src_nav" : "img/bg-prod-tit (7).jpg",
+	"nav" : [{
+		"srcs" : "img/01.谷物杂粮（牛肉味）.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.米果花生.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.珍味花生.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.综合豆果.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.怪味胡豆.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.黑美人葵花籽.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/07.麻辣花生.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.南瓜子.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (8).jpg",
+	"src_nav" : "img/bg-prod-tit (8).jpg",
+	"nav" : [{
+		"srcs" : "img/01.卡布奇诺.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.英式伯爵红茶.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.牛油果梨汁.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.凤梨鲜橙汁.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (9).jpg",
+	"src_nav" : "img/bg-prod-tit (9).jpg",
+	"nav" : [{
+		"srcs" : "img/01.开心果.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.薄皮核桃.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.碧根果仁（奶香味）.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.海盐碧根果仁.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.海盐扁桃仁.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.烘焙腰果.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.夏威夷果.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/08.夏威夷果.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (10).jpg",
+	"src_nav" : "img/bg-prod-tit (10).jpg",
+	"nav" : [{
+		"srcs" : "img/1.猫爪棉花糖.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/2.日式果味果冻.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/3.橡皮糖（水果味）.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/4.日本进口嘉娜宝樱花玫瑰香体糖.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/5.提子奶豆.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/6.夹心棉花糖.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/7.蔓越莓葡萄干扁桃仁夹心巧克力.jpg",
+		"texth" : "香酥大麻花",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/8.手造棒棒糖.jpg",
+		"texth" : "苏打饼干",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+},{
+	"src" : "img/bg-prod-ban (11).jpg",
+	"src_nav" : "img/bg-prod-tit (11).jpg",
+	"nav" : [{
+		"srcs" : "img/01.坚果时代.jpg",
+		"texth" : "大麦若叶曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/02.礼遇.jpg",
+		"texth" : "蔓越莓味曲奇",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/03.食食有爱.jpg",
+		"texth" : "麻薯",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/04.尝尝有赞.jpg",
+		"texth" : "乳香烙蛋糕",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/05.阖家欢.jpg",
+		"texth" : "手撕面包",
+		"textp" : "万物复苏的“绿小花”"
+	},{
+		"srcs" : "img/06.追剧零食陪伴盒.jpg",
+		"texth" : "原味肉松饼",
+		"textp" : "万物复苏的“绿小花”"
+	}]
+}]

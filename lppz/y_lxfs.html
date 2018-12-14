@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="onlineBJ">
+			<div class="container">
+				<div class="i_contact">
+					<img src="img/img-contact.png"/>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$('.windowB').css({
+				height : $('body').innerHeight()- 114
+			})
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="myAbout">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+                   <img src="img/bg-cols-t1.png"/>
+               	</div>
+               	
+               <div class="app_code">
+               		<ul>
+               			<li>
+               				<a href="https://m.weibo.cn/u/1851770484" target="_blank">
+	               				<p><img src="img/icon-media-sina.png"/></p>
+	               				<span>新浪微博</span>
+               				</a>
+               				<div>
+               					<img src="img/qr-code-sina.jpg"/>
+               					<img src="img/qr-food-sina.jpg"/>
+               				</div>
+               			</li>
+               			<li>
+               				<a href="https://weixin.qq.com/cgi-bin/readtemplate?check=false&t=w_indexn73&uin=&stype=10037102&promote=1003799&fr=&" target="_blank">
+	               				<p><img src="img/icon-media-weixin.png"/></p>
+	               				<span>微信</span>
+               				</a>
+               				<div><img src="img/qr-code-weixin.jpg"/></div>
+               			</li>
+               			<li>
+               				<a href="http://v.qq.com/vplus/29316f6032be3304b188a15948ea99e1#uin=29316f6032be3304b188a15948ea99e1" target="_blank">
+	               				<p><img src="img/icon-media-tencent.png"/></p>
+	               				<span>腾讯视频</span>
+	               			</a>
+	               			<div><img src="img/qr-code-tencent.jpg"/></div>
+               			</li>
+               			<li>
+               				<a href="http://tieba.baidu.com/f?kw=%E8%89%AF%E5%93%81%E9%93%BA%E5%AD%90&fr=index&fp=0&ie=utf-8" target="_blank">
+	               				<p><img src="img/icon-media-tieba.png"/></p>
+	               				<span>百度贴吧</span>
+               				</a>
+               				<div><img src="img/qr-code-tieba.jpg"/></div>
+               			</li>
+               		</ul>
+               </div>
+              
+               	
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+			(function(){
+				var num = 0;
+				$('.myCourse_nav_time span').click(function(){
+					$(this).addClass('big').siblings().removeClass('big')
+					num = $(this).index()-1
+					$('.myCourse_con').eq(num).show().siblings().hide()
+					if(num > 0 && num < 10){
+						$('.myCourse_nav_time').animate({
+							marginTop : -(num -1)*106 + 'px'
+						})
+					}
+				})
+				$('.myCourse_top').click(function(){
+					num = num > 0 ? -- num: 0;
+					$('.myCourse_con').eq(num).show().siblings().hide()
+					if(num == 0){
+						$('.myCourse_nav_time span').eq(0).addClass('big').siblings().removeClass('big')
+					}else{
+						$('.myCourse_nav_time span').eq(num).addClass('big').siblings().removeClass('big')
+					}
+					if(num>0&&num<10){
+						$('.myCourse_nav_time').animate({
+							marginTop : -(num-1)*106 + 'px'
+						})
+					}
+				})
+				$('.myCourse_bottom').click(function(){
+					num = num < 11 ? ++ num : 11;
+					$('.myCourse_con').eq(num).show().siblings().hide()
+					$('.myCourse_nav_time span').eq(num).addClass('big').siblings().removeClass('big')
+					if(num<10){
+						$('.myCourse_nav_time').animate({
+							marginTop : -(num-1)*106 + 'px'
+						})
+					}
+				})
+			})();
+		</script>
+	</body>
+</html>

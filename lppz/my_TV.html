@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<div id="header"></div>
+	<div class="my_TV">
+		<div class="container">
+			<div class="my_video_nav">
+				<ul>
+					<li>让嘴巴去旅行</li>
+					<li>病毒视频</li>
+					<li>良妹聊剧</li>
+					<li>痴吃的爱</li>
+					<li>零食问大家</li>
+					<li>产品</li>
+					<li>良品活动</li>
+				</ul>
+			</div>
+			<div class="my_video_banner">
+				<div class="my_Arrow prev">
+					<i class="fa fa-angle-left"></i>
+				</div>
+				<div class="my_Arrow next">
+					<i class="fa fa-angle-right"></i>
+				</div>
+				<div class="my_video_window">
+					<div class="my_video_box">
+						
+						
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer"></div>
+	<body>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+			(function(){
+				$.ajax({
+						url : 'demo2.json',
+						success : function(res){
+							 res.forEach(function(v,i){
+							 	
+							 	var con = '';
+							 	$('.my_video_box').append(`<div class="my_video_list"><ul></ul></div>`)
+							 	
+							 	$('.my_video_box').css({
+									height : $('.my_video_list').eq(0).innerHeight()
+								})
+							 	v.con.forEach(function(m,n){
+							 		con += `<li>
+											<img src="${m.img}"/>
+											<div class="my_video_con">
+												<h2>${m.text1}</h2>
+												<p>${m.text2}<span>${m.text3}</span></p>
+											</div>  
+											<div class="my_video_conB"></div>
+										</li>`
+							 	})
+							 	$('.my_video_list ul').eq(i).append(con)
+							 	
+							 })
+						}
+				})
+				$('.my_video_nav ul li').eq(0).addClass('ooo');
+				var num = 0;
+				$('.my_video_nav ul li').click(function(){
+					num = $(this).index();
+					myTV();
+				})
+				$('.my_video_banner .prev').click(function(){
+					num = num <= 0 ? 6 : --num;
+					myTV();
+				})
+				$('.my_video_banner .next').click(function(){
+					num = num >= 6 ? 0 : ++num;
+					myTV();
+				})
+				function myTV(){
+					$('.my_video_box').css({
+						height : $('.my_video_list').eq(num).innerHeight()
+					});
+					$('.my_video_box').animate({
+						marginLeft : -num*1170
+					},1000);
+					$('.my_video_nav ul li').eq(num).addClass('ooo').siblings().removeClass('ooo')
+				}
+			})()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_pros">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+	               <img src="img/bg-cols-t16.png"/>
+	            </div>
+	            <p>请填写并提交您的宝贵信息，我们将尽快与您取得联系。</p>
+	            <div class="form">
+		           	<p><span>公司名称</span><input type="text" /></p>
+		            <p><span>联系人</span><input type="text" /></p>
+		            <p><span>联系电话</span><input type="text" /></p>
+		            <p><span>地址：</span><input type="text" /></p>
+		            <p>
+		            	<span>预计采购金额 </span>
+			            <select name="" id="" class="cur">
+			            	<option value="0-5000">0-5000</option>
+			            	<option value="5000-2万">5000-2万</option>
+			            	<option value="2万-5万">2万-5万</option>
+			            	<option value="5万-10万">5万-10万</option>
+			            	<option value="10万以上">10万以上</option>	
+			            </select>
+		            </p>
+		            <p>
+		            	<span>团购类别</span>
+		            	<select name="" id="" class="cur">
+		            		<option value="产品">产品</option>
+		            		<option value="消费卡">消费卡</option>
+		            		<option value="电子券">电子券</option>
+		            	</select>
+		            </p>
+		            <button>提交资料</button>
+	            </div>
+			</div>
+		</div>
+		<div class="tijiao">
+			<img src="img/img-succ-tips.png"/>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

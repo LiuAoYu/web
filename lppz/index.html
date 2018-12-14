@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="window">
+			<div class="container windowB">
+				<div class="banner">
+					<div class="bnaner_box">
+						
+					</div>
+					<div class="banner_burster">
+						<div class="burster burster_col"></div>
+						<div class="burster"></div>
+						<div class="burster"></div>
+						<div class="burster"></div>
+						<div class="burster"></div>
+						<div class="burster"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="container footer_con">
+				<p><span>Copyright © 良品铺子股份有限公司 2018 版权所有 </span> <a href="#">鄂ICP备09021577号</a></p>
+			</div>
+		</div>
+		<script>
+			
+			$('.windowB').css({
+				height : $('body').innerHeight() - 114
+			})
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			(function(){
+				var str = ["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg","img/banner6.jpg"]
+				$('.bnaner_box').append(`<img src="${str[0]}"/>`)
+				
+				var num = 0;
+				$('.burster').click(function(){
+					var aa = num;
+					var bb = $(this).index();
+					num = bb;
+					if(aa<bb){
+						banner();
+					} else if(aa>bb){
+						$('.burster').eq(num%6).addClass('burster_col').siblings().removeClass('burster_col')
+						$('.bnaner_box').css({
+							marginLeft : -190
+						})
+						$('.bnaner_box').prepend(`<img src="${str[bb]}"/>`)
+						
+						$('.bnaner_box').animate({
+							marginLeft : 0
+						},700,function(){
+							$('.bnaner_box img').eq(1).remove()
+						})
+					}
+				})
+				var time = setInterval(function(){
+					num ++;
+					banner();
+				},4000)
+				
+				$('.burster').hover(function(){
+					clearInterval(time)
+				},function(){
+					time = setInterval(function(){
+						num ++;
+						banner();
+					},4000)
+				})
+				
+				function banner(){
+					$('.burster').eq(num%6).addClass('burster_col').siblings().removeClass('burster_col')
+					$('.bnaner_box').append(`<img src="${str[num%6]}"/>`)
+					$('.bnaner_box').css({
+						marginLeft : 0
+					})
+					$('.bnaner_box').animate({
+						marginLeft : -190
+					},700,function(){
+						$(this).css({
+							marginLeft : 0
+						})
+						$('.bnaner_box img').eq(0).remove()
+					})
+				}
+			})();
+		</script>
+	</body>
+</html>

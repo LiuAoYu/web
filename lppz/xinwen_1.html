@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_news">
+			<div class="container">
+				<div class="latest wow bounceInDown">
+                    <h2>最新动态</h2>
+                	<p>Latest News</p>
+                </div>
+                <div class="latest_con"></div>
+                <div class="more">
+                	<span></span>
+                	<span></span>
+                	<span></span>
+                </div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+			$(function(){
+				(function(){
+					
+					$.ajax({
+						url : 'demo1.json',
+						success : function(res){
+							res.forEach(function(o,i){
+								var texth1 = o.texth1
+								var textp1 = o.textp1
+								var src = '<img src="'+ o.src +'"/>'
+								var texth2 = o.texth2
+								var textp2 = o.textp2
+								var tem = `<div class="latest_nav">
+			                		<div class="latest_date">
+			                			<h2>${texth1}</h2>
+			                			<p>${textp1}</p>
+			                		</div>
+			                		<div class="latest_img">
+			                			<a href="">
+			                				${src}
+			                			</a>
+			                		</div>
+			                		<div class="latest_text">
+			                			<h2><a href="">${texth2}</a></h2>
+			                			<p>${textp2}</p>
+			                		</div>
+			                	</div>`
+			                	$('.latest_con').append(tem);
+			                	
+			                	var num = 0;
+			                	$('.more').click(function(){
+			                		num ++;
+			                		if(num <=4){
+			                			var texth1 = o.texth1
+										var textp1 = o.textp1
+										var src = '<img src="'+ o.src +'"/>'
+										var texth2 = o.texth2
+										var textp2 = o.textp2
+										var tem = `<div class="latest_nav">
+					                		<div class="latest_date">
+					                			<h2>${texth1}</h2>
+					                			<p>${textp1}</p>
+					                		</div>
+					                		<div class="latest_img">
+					                			<a href="">
+					                				${src}
+					                			</a>
+					                		</div>
+					                		<div class="latest_text">
+					                			<h2><a href="">${texth2}</a></h2>
+					                			<p>${textp2}</p>
+					                		</div>
+					                	</div>`
+					                	$('.latest_con').append(tem)
+					                	if(num ==4){
+					                		$(this).hide()
+					                	}
+				                	}
+			                	})
+							})
+						}
+					});
+				})()
+			})
+		</script>
+	</body>
+</html>

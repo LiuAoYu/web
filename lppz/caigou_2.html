@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_pros">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+	                <img src="img/bg-cols-t15.png"/>
+	            </div>
+	            <div class="products_flow">
+	            	<div class="products_flow_con">
+	            		<img src="img/img-pur-a1.png" class="wow fadeInLeft" data-wow-duration="1500ms"/>
+	            		<div class="wow fadeIn" data-wow-duration="1500ms">
+	            			<p>我司与客户进行团购业务洽谈时，均按照公司统一的团购政策和产品规格，进行团购价格的确认，没有其他任何返利措施，并且签订团购协议。</p>
+	            		</div>
+	            	</div>
+	            	<div class="products_flow_con">
+	            		<img src="img/img-pur-a2.png" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0.5s"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0.5s">	
+		            		<p>在顾客采购量达到3000元以上时，可以享受团购政策产品折扣；</p>
+		            		<p>(非组装定单)收取30%商品定金或全款后打印小票交与顾客作为提货凭证，待货随门店到货周期一起到门店后并提前通知顾客提货；收取70%尾款。</p>
+							<p>(组装定单)我司收取30%商品定金后，交由配送主管安排配送人员于约定时间送货到客户指定地点，团购商品送达顾客当天收取剩余70%尾款并回收团购商品协议。</p>
+	            		</div>
+	            	</div>
+	            	<div class="products_flow_con">
+		            	<div class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1s">	
+		            		<img src="img/img-pur-a3.png" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1s"/>
+		            		<p>武汉市区内团购金额超过3000元（含）可安排物流送货上门；</p>
+		            		<p>武汉市外的团购订单，由物流送至指定门店（随门店配送线路），客户到门店自行提取；若订单未达到送货上门条件，顾客又要求宅配的，需支付相应的物流费；</p>
+		            	</div>
+	            	</div>
+	            	<div class="products_flow_con">
+	            		<img src="img/img-pur-a4.png" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.5s"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1.5s">	
+		            		<p>超3000元（含3000元）团购单制定前必须收取30%以上（含30%）的商品款作为保证金，商品交付给客户时收取剩余70%尾款的；</p>
+		            		<p>任何团购由客户原因造成的团购退货，根据签订的团购协议，相关费用（如配送费用）由客户支付（从定金中扣除后退款）。</p>
+		            	</div>
+	            	</div>
+	            	<div class="products_flow_con">
+	            		<img src="img/img-pur-a5.png" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="2s"/>
+		            	<div class="wow fadeIn" data-wow-duration="1500ms" data-wow-delay="2s">	
+		            		<p>团购产品发票，由良品铺子税务会计进行开票，直接发放到接团购订单的门店或接单人交至客户；</p>
+		            		<p>所有加盟店团购产品由加盟商开具发票；</p>
+		            		<p>消费卡、电子券团购在购买时开具发票后，客户在门店使用后不能再次要求开具发票。</p>
+		            	</div>
+	            	</div>
+	            </div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

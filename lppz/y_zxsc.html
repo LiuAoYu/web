@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="onlineBJ">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+	                <img src="img/bg-cols-t8.png"/>
+	           </div>
+	           <div class="online_app">
+       				<a href="https://liangpinpuzi.tmall.com" target="_blank" class="online_app_logo1"></a>
+       				<a href="https://517lppz.taobao.com" target="_blank" class="online_app_logo2"></a>
+       				<a href="https://517lppz.jd.com" target="_blank" class="online_app_logo3"></a>
+       				<a href="http://mall.yhd.com/index-25789.html" target="_blank" class="online_app_logo4"></a>
+       				<a href="http://shop.dangdang.com/8542" target="_blank" class="online_app_logo5"></a>
+	           </div>
+	           <div style="margin-top: 50px;padding-left: 25px;" class="wow fadeInDown" data-wow-duration="1500ms">
+	                <img src="img/bg-cols-t9.png"/>
+	           </div>
+	           <div class="online_app online_app1">
+       				<a href="app.html" target="_blank" class="online_app_logo6 wow zoomIn"></a>
+	           </div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$('.windowB').css({
+				height : $('body').innerHeight()- 114
+			})
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

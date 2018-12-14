@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_news">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+                    <h2>员工风采</h2>
+                	<p>Latest News</p>
+               </div>
+               <div class="people_banner">
+	               	<div class="swiper-container">
+					    <div class="swiper-wrapper empls cur">
+						    
+					    </div>
+					</div>
+					<div class="swiper-button-prev banner_prev"><i class="fa fa-angle-left"></i></div>
+			    	<div class="swiper-button-next banner_next"><i class="fa fa-angle-right"></i></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="con_box">
+			<div class="con_peo wow jackInTheBox">
+				<div class="cha cur">
+					<i class="fa fa-times-circle"></i>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var img = [{
+				img1 : "img/img-empl-e1.jpg",
+				img2 : "img/img-empl-w1.jpg"
+			},{
+				img1 : "img/img-empl-e2.jpg",
+				img2 : "img/img-empl-w2.jpg"
+			},{
+				img1 : "img/img-empl-e3.jpg",
+				img2 : "img/img-empl-w3.jpg"
+			},{
+				img1 : "img/img-empl-e5.jpg",
+				img2 : "img/img-empl-w5.jpg"
+			},{
+				img1 : "img/img-empl-e6.jpg",
+				img2 : "img/img-empl-w6.jpg"
+			},{
+				img1 : "img/img-empl-e7.jpg",
+				img2 : "img/img-empl-w7.jpg"
+			},{
+				img1 : "img/img-empl-e8.jpg",
+				img2 : "img/img-empl-w8.jpg"
+			}]
+			img.forEach(function(o,i){
+				var ming = 'empl' + (i +1);
+				var img1 = '<img src="'+ o.img1 +'"/>';
+				$('.empls').append(`<div class="swiper-slide ${ming} yuan">
+						    	${img1}
+						   </div>`)	
+			})
+			$('.empl1').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w1.jpg"/>`)
+			})
+			$('.empl2').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w2.jpg"/>`)
+			})
+			$('.empl3').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w3.jpg"/>`)
+			})
+			$('.empl4').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w5.jpg"/>`)
+			})
+			$('.empl5').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w6.jpg"/>`)
+			})
+			$('.empl6').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w7.jpg"/>`)
+			})
+			$('.empl7').click(function(){
+				$('.con_box').show()
+				$('.con_peo').addClass('animated').append(`<img src="img/img-empl-w8.jpg"/>`)
+			})
+			$('.cha').click(function(){
+				$('.con_box').hide();
+				$('.con_peo img').remove()
+			})
+			var mySwiper = new Swiper('.swiper-container', {
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+				loop : true,
+				freeMode : true,
+				mousewheelControl : false,
+				slidesPerView : 4,
+				simulateTouch : false,
+				autoplay : 2000,
+				speed:1000,
+			})
+			//鼠标覆盖停止自动切换
+			mySwiper.container[0].onmouseover=function(){
+			  mySwiper.stopAutoplay();
+			}
+			//鼠标移出开始自动切换
+			mySwiper.container[0].onmouseout=function(){
+			  mySwiper.startAutoplay();
+			}
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>

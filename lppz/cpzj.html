@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="food">
+			<div class="food_img"></div>
+			<div class="food_img_nav"></div>
+			<div class="container clearMP">
+				<ul class="nav_menus">
+				</ul>
+			</div>
+		</div>
+		
+		<div class="bottom_img">
+			<img src="img/bg-cols-b3.jpg"/>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+			$(function(){
+				(function(){
+					var local_arr = location.search.substr(1).split('&')
+					var num;
+					$.each(local_arr,function(i,v){
+						var arr = v.split('=');
+						if(arr[0] == 'num'){
+							num = arr[1];
+						}
+						if(num == undefined){
+							num = 0;
+						}
+					});
+					$.ajax({
+						url : 'demos.json',
+						success : function(res){
+							res.forEach(function(o,i){
+								var iii = '<img src="'+ o.nav[num].srcs +'"/>'
+								var ttt = o.nav[num].texth;
+								var ppp = o.nav[num].textp;
+								if(o.nav[num].texth){
+								var lis = `<li class="food_li"><a href=""><div class="food_imgs">${iii}</div><div class="food_cons"><h4>${ttt}</h4><p>${ppp}</p></div><div class="food_con"></div></a></li>`
+								
+								$('.nav_menus').append(lis)	
+								}
+								if(o.nav[num].src){
+									$('.food_img').append('<img src="'+ o.nav[num].src +'"/>');
+									$('.food_img_nav').append('<img src="'+ o.nav[num].src_nav +'"/>');
+								}
+							})
+						}
+					});
+				})()
+			})
+		</script>
+	</body>
+</html>

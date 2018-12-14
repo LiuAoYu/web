@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="font/css/font-awesome.css" />
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box_prosJ">
+			<div class="container">
+				<div class="latest wow fadeInDown" data-wow-duration="1500ms">
+	               <img src="img/bg-cols-t11.png"/>
+	            </div>
+	            <div class="content2">
+		            <p class="wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="0.5s">扫描以下二维码，填写相关信息，点击提交</p>
+					<p class="wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="0.5s">成功提交后，公司会在7天内予以审核回复，感谢您的耐心等待!</p>
+		            <img src="img/qr-code-weixin.jpg" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1s"/>
+	            </div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			var wow = new WOW({
+				animateClass : 'animated'
+			});
+			wow.init();
+			$('#header').load('header.html .head',function(){
+				$('head').append($('<script src="js/demo.js"><\/script>'))
+			});
+			$('#footer').load('footer.html .foots');
+		</script>
+	</body>
+</html>
