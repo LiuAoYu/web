@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script src="js/jquery.min.js"></script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style: none;
+		}
+		.box{
+			width: 600px;
+			margin: 100px auto;
+		}
+		.box ul li{
+			display: flex;
+		    justify-content: space-between;
+		    line-height: 50px;
+		    align-items: center;
+			box-sizing: border-box;
+			padding: 0 20px;
+		    border: 1px solid #000000;
+		    margin-bottom: 10px;
+		}
+		.box ul li span{
+		    width: 20px;
+		    height: 20px;
+		    border: 1px solid #000000;
+		    border-radius: 50%;
+		}
+		.box ul li span.active{
+			background: #000000;
+		}
+		.box .quan{
+			display: flex;
+		    margin-bottom: 10px;
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+		.box .quan>p.active{
+			background: #000000;
+		}
+		.box .quan p{
+			width: 20px;
+		    height: 20px;
+		    border: 1px solid #000000;
+		    border-radius: 50%;
+		    margin-right: 10px;
+		}
+		.box .quan span{
+			margin-right: 10px;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<div class="quan">
+				<p onclick="selectAll(this)"></p>
+				<span>全选</span>
+				<div class="zong">总计：<span>0</span></div>
+			</div>
+		</div>
+		<script>
+			var arr = [{
+				name : '商品1',
+				money: 100
+			},{
+				name : '商品2',
+				money: 200
+			},{
+				name : '商品3',
+				money: 300
+			},{
+				name : '商品4',
+				money: 400
+			},{
+				name : '商品5',
+				money: 500
+			}]
+			Array.prototype.indexOf = function(val) { 
+				for (var i = 0; i < this.length; i++) { 
+					if (this[i] == val) return i; 
+				} 
+				return -1; 
+			};
+			Array.prototype.removeArr = function(val) { 
+				var index = this.indexOf(val); 
+				if (index > -1) { 
+					this.splice(index, 1); 
+				}	 
+			};
+			
+			var arrAll = [0];
+			arr.map((item,index)=>{
+				$('.box').append(`<ul><li>
+					<span onclick=select(`+ item.money +`,this)></span>
+					<p>`+item.name+`</p>
+					<p>`+item.money+`</p>
+				</li></ul>`)
+			})
+			//单选
+			function select(n,m){
+				
+				if($(m).hasClass('active')){
+					$(m).removeClass('active')
+					arrAll.removeArr(n)
+				}else{
+					$(m).addClass('active')
+					arrAll.push(n)
+				}
+				$('.zong span').html(eval(arrAll.join('+')))
+				console.log(eval(arrAll.join('+')))
+			}
+			//全选
+			function selectAll(m){
+				if($(m).hasClass('active')){
+					$(m).removeClass('active')
+					$('.box ul li span').removeClass('active')
+					arrAll = [0]
+				}else{
+					$(m).addClass('active')
+					$('.box ul li span').addClass('active')
+					
+					arr.map((item,index)=>{
+						if(arrAll.indexOf(item.money) == -1){
+							arrAll.push(item.money)
+						}
+					})
+				}
+				$('.zong span').html(eval(arrAll.join('+')))
+				console.log(arrAll)
+			}
+		</script>
+	</body>
+</html>
